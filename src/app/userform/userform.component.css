@@ -1,0 +1,22 @@
+table{
+  border-collapse: collapse;
+  width:50%;
+  border:1px solid black;
+}
+
+th,td{
+  border: 1px solid black;
+  text-align:left;
+  padding:5px;
+}
+
+tr:nth-child(odd){
+  background-color: cadetblue;
+}
+tr:nth-child(even){
+  background-color: cornsilk;
+}
+
+tr,td:hover{
+  background-color: coral;
+}
