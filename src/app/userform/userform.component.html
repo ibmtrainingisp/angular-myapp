@@ -1,2 +1,4 @@
-<h3>{{title}}</h3>
-<input [(ngModel)]='firstname'>
+<h3>{{title}}</h3>  <!--oneway binding-->
+<input [(ngModel)]='firstname'> <!--twoway binding/property binding-->
+<button (click)='save()'>Save</button>  <!--event binding-->
+<input type="number">
