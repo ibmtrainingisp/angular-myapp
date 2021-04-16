@@ -1,4 +1,5 @@
 export class User{
-  firstname:string="Jane";
+  name:string="Jane";
   age:number=0;
+  dobDate:Date=new Date();
 }

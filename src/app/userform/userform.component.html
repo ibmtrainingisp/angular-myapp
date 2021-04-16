@@ -1,13 +1,17 @@
 <!--view-->
 <h3>{{title}}</h3>  <!--oneway binding-->
-<input [(ngModel)]='user.firstname'> <!--twoway binding/property binding-->
+<input [(ngModel)]='user.name'> <!--twoway binding/property binding-->
 <input [(ngModel)]='user.age' type="number" placeholder="Age">
+<input type="date" [(ngModel)] = 'user.dobDate'>
 <button (click)='save()'>Save</button>  <!--event binding-->
 <table>
-  <thead><td>FirstName</td><td>Age</td></thead>
+  <thead>
+    <td>FirstName</td>
+    <td>Age</td>
+  </thead>
   <tbody>
     <tr *ngFor='let user1 of UserArray'>
-      <td>{{user1.firstname}}</td>
+      <td>{{user1.name}}</td>
       <td>{{user1.age}}</td>
     </tr>
   </tbody>
