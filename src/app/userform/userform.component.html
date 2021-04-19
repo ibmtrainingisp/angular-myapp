@@ -10,9 +10,10 @@
     <td>Age</td>
   </thead>
   <tbody>
-    <tr *ngFor='let user1 of UserArray'>
+    <tr *ngFor="let user1 of UserArray;index as i">
       <td>{{user1.name}}</td>
       <td>{{user1.age}}</td>
+      <td><button (click)='this.deleteUser(user1.id,i)'>Delete</button></td>
     </tr>
   </tbody>
 </table>
