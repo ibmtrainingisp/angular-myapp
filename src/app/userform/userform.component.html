@@ -8,11 +8,13 @@
   <thead>
     <td>FirstName</td>
     <td>Age</td>
+    <td>DOB</td>
   </thead>
   <tbody>
     <tr *ngFor="let user1 of UserArray;index as i">
-      <td>{{user1.name}}</td>
+      <td>{{user1.name|uppercase}}</td>
       <td>{{user1.age}}</td>
+      <td>{{user1.dobDate | date:"M/d/yy"}}</td>
       <td><button (click)='this.deleteUser(user1.id,i)'>Delete</button></td>
     </tr>
   </tbody>
